@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body data-dark>
 
     <header class="header">
         <nav class="nav">
@@ -30,15 +30,15 @@
                     <li class="menu__item"><a href="#seccion1">Reloj Digital</a></li>
                     <li class="menu__item"><a href="#seccion2">Eventos del teclado</a></li>
                     <li class="menu__item"><a href="#seccion3">Cuenta Regresiva</a></li>
-                    <li class="menu__item"><a href="#seccion4">Seccion 4</a></li>
+                    <li class="menu__item"><a href="#seccion4">Responsive con JavaScript</a></li>
                 </ul>
             </nav>
         </div>
-        <section class="content" id="seccion1">
-            <h3 class="subtitulo">Reloj Digital</h3>
+        <section class="content" id="seccion1" data-dark>
+            <h3 class="subtitulo" data-dark>Reloj Digital</h3>
 
 
-            <p class="reloj__hora">1:36</p>
+            <p class="reloj__hora" data-dark></p>
             <div class="reloj__container">
                 <button class="reloj__btn" id="btnIniciarRl">Iniciar Reloj</button>
                 <button class="reloj__btn" id="btnDetenerRl">Detener Reloj</button>
@@ -48,18 +48,18 @@
 
             <audio src="audio/alarma.mp3" id="audio"></audio>
         </section>
-        <section class="content" id="seccion2">
-            <h3 class="subtitulo">Eventos del teclado</h3>
+        <section class="content" id="seccion2" data-dark>
+            <h3 class="subtitulo" data-dark>Eventos del teclado</h3>
             <article class="stage">
                 <div class="ball"></div>
             </article>
         </section>
-        <section class="content" id="seccion3">
-            <h3 class="subtitulo">Cuenta Regresiva</h3>
+        <section class="content" id="seccion3" data-dark>
+            <h3 class="subtitulo" data-dark>Cuenta Regresiva</h3>
             <div id="cuentaRegresiva"></div>
         </section>
-        <section class="content" id="seccion4">
-            <h3 class="subtitulo">Seccion 4</h3>
+        <section class="content" id="seccion4" data-dark>
+            <h3 class="subtitulo" data-dark>Responsive con JavaScript</h3>
         </section>
 
         <button class="btnMenu"><i class='bx bx-menu' id="iconoMenu"></i></button>

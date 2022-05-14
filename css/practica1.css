@@ -5,6 +5,7 @@
     --three-color : #F9FFA4;
     --four-color :#FDD7AA;
     --btn-color : #72E1D1;
+    --dark-mode : #353238;
 }
 
 
@@ -273,6 +274,7 @@ img{
 }
 
 .darkMode{
-    background-color: #000;
-    color: #fff;
+    background-color: var(--dark-mode) !important;
+    color: #fff !important;
 }
+

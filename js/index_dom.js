@@ -15,7 +15,6 @@ d.addEventListener("DOMContentLoaded",(e)=>{
     relojDigital("#btnIniciarRl","#btnDetenerRl","#btnIniciarAl","#btnDetenerAl",".reloj__hora","#audio");
     cuentaRegresiva("#cuentaRegresiva","Julio 21, 2022 05:25:19","Feliz Cumpleaños Luis!!");
     scrollBtn(".btnScroll");
-    cambiarModo(".btnModo","#iconModo","darkMode");
 })
 
 d.addEventListener("keydown",(e)=>{
@@ -23,6 +22,7 @@ d.addEventListener("keydown",(e)=>{
     moveBall(e,".ball",".stage");
 })
 
+cambiarModo(".btnModo","#iconModo","darkMode");
 
 
 
