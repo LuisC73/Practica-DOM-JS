@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-dark>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios DOM</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/practica1.css">
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Ed_bpKBKSlNR4Lb5jWZKF4bWUf58zn0qxA&usqp=CAU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <h1 class="nav__item">Ejercicios del DOM</h1>
+        </nav>
+    </header>
+
+    <main>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li class="menu__item"><a href="#seccion1">Reloj Digital</a></li>
+                    <li class="menu__item"><a href="#seccion2">Eventos del teclado</a></li>
+                    <li class="menu__item"><a href="#seccion3">Cuenta Regresiva</a></li>
+                    <li class="menu__item"><a href="#seccion4">Seccion 4</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="content" id="seccion1">
+            <h3 class="subtitulo">Reloj Digital</h3>
+
+
+            <p class="reloj__hora">1:36</p>
+            <div class="reloj__container">
+                <button class="reloj__btn" id="btnIniciarRl">Iniciar Reloj</button>
+                <button class="reloj__btn" id="btnDetenerRl">Detener Reloj</button>
+                <button class="reloj__btn" id="btnIniciarAl">Iniciar Alarma</button>
+                <button class="reloj__btn" id="btnDetenerAl">Detener Alarma</button>
+            </div>
+
+            <audio src="audio/alarma.mp3" id="audio"></audio>
+        </section>
+        <section class="content" id="seccion2">
+            <h3 class="subtitulo">Eventos del teclado</h3>
+            <article class="stage">
+                <div class="ball"></div>
+            </article>
+        </section>
+        <section class="content" id="seccion3">
+            <h3 class="subtitulo">Cuenta Regresiva</h3>
+            <div id="cuentaRegresiva"></div>
+        </section>
+        <section class="content" id="seccion4">
+            <h3 class="subtitulo">Seccion 4</h3>
+        </section>
+
+        <button class="btnMenu"><i class='bx bx-menu' id="iconoMenu"></i></button>
+        <button class="btnScroll"><i class='bx bx-up-arrow-alt'></i></button>
+        <button class="btnModo"><i class='bx bxs-moon' id="iconModo"></i></button>
+    </main>
+
+
+    <script src="js/index_dom.js" type="module"></script>
+</body>
+
+</html>
